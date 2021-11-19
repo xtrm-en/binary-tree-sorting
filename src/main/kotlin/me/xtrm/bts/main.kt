@@ -62,5 +62,7 @@ fun main() {
     )
     println(sampleTree)
 
-    assert(true) { "yes" }
+    assert(sampleTree.search(70)) { "yes" }
+    assert(sampleTree.search(19)) { "yes" }
+    assert(sampleTree.search(-1)) { "no" }
 }
